@@ -10,10 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.5.2",
     "@next/font": "13.1.6",
     "@react-icons/all-files": "^4.1.0",
-    "@splidejs/splide": "^4.1.4",
+    "@splidejs/react-splide": "^0.7.12",
     "aos": "^2.3.4",
     "flowbite": "^1.6.5",
     "flowbite-react": "^0.4.3",

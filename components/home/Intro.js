@@ -12,11 +12,12 @@ import Image from 'next/image'
 import HeroImage from '../../public/images/hero-image.png'
 import Square from '../../public/images/rectangle.png'
 
-export default function HeroSection(){
+export default function Intro(){
+
     const socials = [
-        {url: "https://www.instagram.com/ervin.cs_09", label: <AiFillInstagram size={24}/>},
-        {url: "https://www.linkedin.com/in/ervin-cahyadinata-sungkono", label: <AiFillLinkedin size={24}/>},
-        {url: "https://github.com/ervin-sungkono", label: <AiFillGithub size={24}/>}
+        {url: "https://www.instagram.com/sumit__makker", label: <AiFillInstagram size={24}/>},
+        {url: "https://in.linkedin.com/in/sumit-makker", label: <AiFillLinkedin size={24}/>},
+        {url: "https://github.com/sumitmakker4", label: <AiFillGithub size={24}/>}
     ]
     const typewriterConfig = {
         autoStart: true,
@@ -27,7 +28,7 @@ export default function HeroSection(){
     useEffect(() => {
         const typewriter = new Typewriter('#heading-typewriter', typewriterConfig)
         typewriter
-            .typeString('Ervin Cahyadinata<br>Sungkono')
+            .typeString('Sumit Makker')
             .pauseFor(5000)
             .start()
     })
@@ -35,15 +36,15 @@ export default function HeroSection(){
         <section className={`${styles.container} py-6 md:py-16`}>
             <div className={styles["hero-content"]}>
                 <div className={styles["heading-text"]}>
-                    <p>Hello, my name is</p>
+                    <p>Hello! I'm</p>
                     <div className={styles["heading-name"]}>
                         <h1 id="heading-typewriter"></h1>
-                        <h1 id="name-text">Ervin Cahyadinata<br/>Sungkono</h1>
+                        <h1 id="name-text">Sumit Makker</h1>
                     </div>
-                    <p>Web Developer & Web Designer</p>
+                    <p>App & Web Developer</p>
                 </div>
                 <Link href="https://drive.google.com/file/d/1cODpw-zhF3dpDGRBxN0HlxOI1ywUYUbK/view?usp=sharing" className="btn btn-primary" target="_blank">
-                    <p>See My CV</p>
+                    <p>Get Resume</p>
                 </Link>
             </div>
             <div className={styles["social-media-links"]}>

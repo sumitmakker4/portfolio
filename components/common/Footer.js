@@ -17,7 +17,7 @@ export default function Footer(){
                         </Link>
                     </div>
                 </div>
-                <p>Copyright © Ervin Cahyadinata Sungkono 2023</p>
+                <p>Copyright © Sumit Makker {new Date().getFullYear()}</p>
             </div>
         </footer>
     )

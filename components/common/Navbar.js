@@ -44,7 +44,6 @@ export default function Navbar(){
     const navigations = [
         {label: "Home", url: "/"},
         {label: "About", url: "/about"},
-        {label: "Design", url: "/design"},
         {label: "Project", url: "/project"},
     ]
     const router = useRouter()

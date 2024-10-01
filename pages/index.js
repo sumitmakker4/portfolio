@@ -2,29 +2,30 @@ import dynamic from "next/dynamic"
 import { getGithubUserData } from "../lib/fetch"
 
 import Layout from "../components/layout/Layout"
-const HeroSection = dynamic(() => import("../components/home/HeroSection"))
+const Intro = dynamic(() => import("../components/home/Intro"))
 const AboutSection = dynamic(() => import("../components/about/AboutSection"))
-const GithubCarouselSection = dynamic(() => import("../components/home/GithubCarouselSection"))
+const ProjectCarousel = dynamic(() => import("../components/home/ProjectCarousel"))
+import projects from "../data/Projects"
 
-export default function Home({githubProjects}) {
+export default function Home() {
   return(
     <Layout 
-      title="Sumit Makker"
-      description="Hello! im known as Sumit Makker, a student at Binus University who has a passion for Web Development and Web Design. This is my personal website where I put my past projects and designs."
+      title="Home - Sumit Makker"
+      description="Hello! I'm Sumit Makker. This is my personal website where I put my past projects and blogs."
     >
-      <HeroSection/>
+      <Intro/>
       <AboutSection/>
-      <GithubCarouselSection githubProjects={githubProjects.slice(0,7)}/>
+      <ProjectCarousel projects={projects}/>
     </Layout>
   )
 }
 
 export async function getStaticProps(){
-  const githubData = await getGithubUserData()
+  const blogs = await getGithubUserData()
 
   return{
     props:{
-      githubProjects: githubData
+      blogs
     }
   }
 }
