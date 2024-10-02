@@ -4,8 +4,8 @@ import { getGithubUserData } from "../lib/fetch"
 import Layout from "../components/layout/Layout"
 const Intro = dynamic(() => import("../components/home/Intro"))
 const AboutSection = dynamic(() => import("../components/about/AboutSection"))
-const ProjectCarousel = dynamic(() => import("../components/home/ProjectCarousel"))
-import projects from "../data/Projects"
+import Projects from "../components/project/Projects"
+import { projects } from "../data/data"
 
 export default function Home() {
   return(
@@ -15,7 +15,7 @@ export default function Home() {
     >
       <Intro/>
       <AboutSection/>
-      <ProjectCarousel projects={projects}/>
+      <Projects title={'Latest Projects'} projects={projects}/>
     </Layout>
   )
 }

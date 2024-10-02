@@ -38,7 +38,7 @@ export default function Navbar(){
         setPrevYPos(clientWindowHeight)
     }, [clientWindowHeight]);
 
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme } = useTheme('dark')
     const toggleTheme = () => theme === 'light' ? setTheme('dark') : setTheme('light')
 
     const navigations = [

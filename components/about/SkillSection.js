@@ -12,13 +12,13 @@ export default function SkillSection({skills}){
                 <div className="hr"></div>
                 <div className="skills grid grid-cols-5 gap-3">
                     {skills.map(skill => (
-                        <Tooltip placement="bottom" content={skill.label} key={skill.label}>
+                        <Tooltip placement="bottom" content={skill.title} key={skill.title}>
                             <div className="bg-white dark:bg-neutral-700 p-2 md:p-3 rounded hover:bg-blue-200 dark:hover:bg-blue-500 hover:-translate-y-2 cursor-pointer transition duration-300 shadow-md">
                                 <Image 
-                                    src={skill.src}
+                                    src={skill.image}
                                     width={32}
                                     height={32}
-                                    className={`${skill.label.toLowerCase() === 'nextjs' ? theme === "dark" ? "invert" : "" : ""}`}
+                                    className={`${skill.title.toLowerCase() === 'nextjs' ? theme === "dark" ? "invert" : "" : ""}`}
                                     style={{aspectRatio: '1 / 1', objectFit: 'contain'}}
                                     alt=""
                                     key={skill}

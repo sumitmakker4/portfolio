@@ -6,7 +6,7 @@ const ContactForm = dynamic(() => import("../components/contact/ContactForm"))
 export default function Contact(){
     return(
         <Layout
-            title={"Ervin | Contact"}
+            title={"Sumit Makker | Contact"}
             description="Contact me if you have a question"
         >
             <ContactForm/>

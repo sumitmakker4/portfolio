@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
     })
   })
   return (
-    <ThemeProvider attribute='class' enableSystem={false}>
+    <ThemeProvider attribute='class' enableSystem={false} defaultTheme='dark'>
       {isMounted && <Component {...pageProps} />}
     </ThemeProvider>
   )
