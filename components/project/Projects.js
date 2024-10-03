@@ -21,10 +21,6 @@ export default function Projects({title,projects}){
                 ))}
             </div>
 
-            <div className="mt-16" data-aos="fade-up">
-                <Link href={"/project"} className="btn btn-primary">More Projects</Link>
-            </div>
-
         </Section>
     )
 }

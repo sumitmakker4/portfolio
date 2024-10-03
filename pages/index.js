@@ -4,7 +4,7 @@ import { getGithubUserData } from "../lib/fetch"
 import Layout from "../components/layout/Layout"
 const Intro = dynamic(() => import("../components/home/Intro"))
 const AboutSection = dynamic(() => import("../components/about/AboutSection"))
-import Projects from "../components/project/Projects"
+import Projects from "../components/home/Projects"
 import { projects } from "../data/data"
 
 export default function Home() {

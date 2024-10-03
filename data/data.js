@@ -22,6 +22,7 @@ export const projects = [
             TestAcademyHome,
         ],
         topics : [],
+        category : 'Webiste',
         createdAt : '10 December 2022'
     },
     {
@@ -32,6 +33,7 @@ export const projects = [
             BubbleQueenHome,
         ],
         topics : [],
+        category : 'Webiste',
         createdAt : '10 December 2022'
     },
     {
@@ -42,6 +44,7 @@ export const projects = [
             GICHome,
         ],
         topics : [],
+        category : 'Webiste',
         createdAt : '10 December 2022'
     }
 ]
@@ -87,4 +90,10 @@ export const skills = [
         title : 'Github',
         image : Github
     },
+]
+
+export const categories = [
+    'All',
+    'Webiste',
+    'Mobile App'
 ]
